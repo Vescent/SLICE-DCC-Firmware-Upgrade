@@ -6,14 +6,29 @@ Repository for the latest released firmware for the SLICE-DCC
   https://github.com/Vescent/SLICE-FFC_Firmware_Upgrade_Utility:
 
 ## Instructions
-  Left click on SLICE_Firmware_Update_Instructions-V1-11.pdf and then click 'Download' to download the instructions for use.  
-   
-  Left click on SLICE_firmware_update.docx and then click 'Download' to download the instructions for use.
+  Follow the link above to download the latest version of the SLICE Firmware Upgrade Utility.
 
+  Left click on SLICE_Firmware_Update_Instructions-V1-21.pdf and then click 'Download' to download the instructions for use.  
+
+  Follow the instructions in the PDF to use the Auto-Download functionality of the SLICE Firmware Upgrade Utility.
+
+### If you do not wish to use Auto-Download:
   Left click on the upgrade package (Sx-xx-CCx-xx.zip) and then click 'Download' to download the firmware package to your hard drive.
   
-  The two files in the .zip file need to be placed in the folder described in the instructions. DO NOT RENAME THEM!
+  The two files in the .zip file need to be placed in the following location on your computer: **C:\Vescent\SLICE\UPGRADE\**.
+  DO NOT RENAME THEM!
+
+  Now, run the SLICE Firmware Upgrade Utility, and choose to use the files when they are detected by the program.
+
 # Change Log (Most Recent First)
+## S1.98 CC1.59
+ 1. GUI responsiveness improved.
+ 2. USB Device Descriptor now includes Serial Number, to make devices more easily distinguishable in software.
+**Note: On Windows PCs, this may cause your device to appear as a different COM Port than it did previously.**
+ 3. The unit's serial number (as written on the rear panel) is now displayed on the General Settings screen.
+ 4. Assorted bugfixes.
+
+
 ## S1.82 CC1.58
  1. Changes behavior of I/O Trigger In Enable/Disable Channel functionality to use interrupt driven shunting to control output based on the following when enabled in I/O menu:  
 ###    Channel Enabled  
@@ -28,7 +43,7 @@ Repository for the latest released firmware for the SLICE-DCC
  3. Fixes random values and lockups when using the rotary knob to adjust values
  4. Removes the ability to enable a channel through the API CONTROL command when the channel is in an error state
  5. Turns off modulation selection when channels are disabled
- 6. Fixes the lack of Interlock Warning display when the device is pwered on while the interlock switch is in an open position
+ 6. Fixes the lack of Interlock Warning display when the device is powered on while the interlock switch is in an open position
 
 ## S1.69 CC1.52 
  1. Revises EEPROM reload function to fix a problem of overrunning RAM on startup which sometimes resulted in a Grey Screen.
