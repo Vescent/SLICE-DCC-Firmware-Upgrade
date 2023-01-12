@@ -21,13 +21,26 @@ Repository for the latest released firmware for the SLICE-DCC
   Now, run the SLICE Firmware Upgrade Utility, and choose to use the files when they are detected by the program.
 
 # Change Log (Most Recent First)
+## S1.106 CC1.69
+ 1. Enhanced safety features to assure no current is output from the SLICE-DCC when the GUI indicates an OFF state
+ 2. Adds “Possible Fault Detected” message if current output is continuously detected after corrective steps have been taken
+ 3. Fixes Constant Power Mode lack of output current
+ 4. Fixes Incorrect Enabled state if INTERLOCK button is rapidly touched and then dismissed after closing the interlock circuit.
+ 5. Changes startup sequence to delay modulation enable until current has ramped up to the setpoint.
+ 6. Fixes de-shunting of inactive channel
+ 7. Fixes Trigger In functionality to correct cross channel shunting / de-shunting
+ 8. Fixes momentary appearance of polarity change when settings are locked.
+ 9. Changes wording on Trigger In menu to reflect the actual function:
+    “Enable / Disable Current Shunt”
+ 10. Fixes DCC Compliance voltage on unused channel while the other channel is enabled
+ 11. Adds I2C failure triggered system reset an warning message
+
 ## S1.98 CC1.59
  1. GUI responsiveness improved.
  2. USB Device Descriptor now includes Serial Number, to make devices more easily distinguishable in software.
 **Note: On Windows PCs, this may cause your device to appear as a different COM Port than it did previously.**
  3. The unit's serial number (as written on the rear panel) is now displayed on the General Settings screen.
  4. Assorted bugfixes.
-
 
 ## S1.82 CC1.58
  1. Changes behavior of I/O Trigger In Enable/Disable Channel functionality to use interrupt driven shunting to control output based on the following when enabled in I/O menu:  
