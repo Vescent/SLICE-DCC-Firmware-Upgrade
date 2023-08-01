@@ -8,7 +8,7 @@ Repository for the latest released firmware for the SLICE-DCC
 ## Instructions
   Follow the link above to download the latest version of the SLICE Firmware Upgrade Utility.
 
-  Left click on SLICE_Firmware_Update_Instructions-V1-21.pdf and then click 'Download' to download the instructions for use.  
+  Left click on SLICE_Firmware_Update_Instructions-V1-42.pdf and then click 'Download' to download the instructions for use.  
 
   Follow the instructions in the PDF to use the Auto-Download functionality of the SLICE Firmware Upgrade Utility.
 
@@ -21,7 +21,11 @@ Repository for the latest released firmware for the SLICE-DCC
   Now, run the SLICE Firmware Upgrade Utility, and choose to use the files when they are detected by the program.
 
 # Change Log (Most Recent First)
-## S1.106 CC1.69
+## S1.109 CC1.72
+ 1. Adds polarity setting to Trigger In and Trigger Out functionality
+ 2. Adds Input Trigger Option that latches the operating mode in an OFF state
+ 3. Fixes 24V power good fault handling to correctly disable channels, capture and report the power output at the moment of the fault
+ ## S1.106 CC1.69
  1. Enhanced safety features to assure no current is output from the SLICE-DCC when the GUI indicates an OFF state
  2. Adds “Possible Fault Detected” message if current output is continuously detected after corrective steps have been taken
  3. Fixes Constant Power Mode lack of output current
