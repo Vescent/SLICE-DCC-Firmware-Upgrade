@@ -21,6 +21,9 @@ Repository for the latest released firmware for the SLICE-DCC
   Now, run the SLICE Firmware Upgrade Utility, and choose to use the files when they are detected by the program.
 
 # Change Log (Most Recent First)
+## S1.110 CC1.72
+Adds support for new Rotary Encoders.
+
 ## S1.109 CC1.72
  1. Adds polarity setting to Trigger In and Trigger Out functionality
  2. Adds Input Trigger Option that latches the operating mode in an OFF state
